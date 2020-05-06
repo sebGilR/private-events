@@ -1,6 +1,10 @@
 class EventsController < ApplicationController
+  require 'date'
+
   def index
     @events = Event.all
+    @past = Event.past(Date.today)
+    @upcoming = Event.upcoming(Date.today)
   end
 
   def new

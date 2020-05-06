@@ -1,3 +1,20 @@
 <h1>Event details</h1>
 
 <p>Creator: <%= @event.creator.name %></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attendees</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @event.attendees.each do |attendee| %>
+      <tr>
+        <td><%= attendee.name %></td>s
+      </tr>
+    <% end %>
+  </tbody>
+</table>

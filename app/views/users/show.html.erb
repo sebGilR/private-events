@@ -1,21 +1,21 @@
 
 <p>Previously Attended Events</p>
 <ul>
-<% previous_events.each do |item| %>
+<% @previous_events.each do |item| %>
   <li><%= item.description %></li>
 <% end %>
 </ul>
 
 <p>Upcoming Events</p>
 <ul>
-<% upcoming_events.each do |item| %>
+<% @upcoming_events.each do |item| %>
   <li><%= item.description %></li>
 <% end %>
 </ul>
 
 <p>Created Events</p>
 <ul>
-<% current_user.created_events.each do |item| %>
+<% @current_user.created_events.each do |item| %>
   <li><%= item.description %></li>
 <% end %>
 </ul>
