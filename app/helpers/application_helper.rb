@@ -13,4 +13,14 @@ module ApplicationHelper
     end
     return html.html_safe
   end
+
+  def create_event
+    html = ''
+    if current_user
+      html += ' | '
+      html += link_to('Create event', new_event_path)
+    end
+
+    return html.html_safe
+  end
 end

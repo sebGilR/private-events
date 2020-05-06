@@ -12,7 +12,8 @@
   <body>
     <%= flash.notice %>
 
-    <%= user_actions(current_user) %> <br>
+    <%= user_actions(current_user) %> - <%= link_to "Home", root_url %><%= create_event %>
+    <br>
     
     <%= yield %>
   </body>
