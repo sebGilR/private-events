@@ -1,0 +1,7 @@
+
+<p>Attended Events</p>
+<ul>
+@for <% current_user.attended_events.each do |item| %>
+  <li><%= item.description %></li>
+<% end %>
+</ul>
