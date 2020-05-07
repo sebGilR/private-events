@@ -4,9 +4,14 @@ class SessionsController < ApplicationController
 
   def create
     user = User.find_by_email(params[:email])
-    session[:user_id] = user.id
 
-    redirect_to root_path, notice: "Logged in"
+    if user.nil?
+      redirect_to login_path, notice: "Email is not valid"
+    else
+      session[:user_id] = user.id
+      redirect_to root_path, notice: "Logged in"
+    end
+
   end
 
   def destroy
