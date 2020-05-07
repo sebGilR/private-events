@@ -23,4 +23,13 @@ module ApplicationHelper
 
     return html.html_safe
   end
+
+  def attend(event)
+    html = ''
+    unless current_user.attended_events.include?(event)
+      html += button_to "Attend", attend_event_path(event_attendee: current_user, attended_event: event)
+    end
+
+    return html.html_safe
+  end
 end
