@@ -26,7 +26,7 @@ module ApplicationHelper
 
   def attend(event)
     html = ''
-    if current_user 
+    if current_user
       unless current_user.attended_events.include?(event)
         html += button_to 'Attend', attend_event_path(event_attendee: current_user, attended_event: event)
       end
