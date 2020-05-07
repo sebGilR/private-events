@@ -29,7 +29,17 @@ And run the next instruction to get the gems that are needed for this project
 
 ## Screenshot
 
-![image](https://user-images.githubusercontent.com/5160907/81008694-f771a180-8e18-11ea-901a-c2ec4be49735.png)
+![image](https://user-images.githubusercontent.com/5160907/81319803-d3e76a80-9055-11ea-95de-e2149c7b26d2.png)
+
+## How to run test cases
+
+Type next command to run unit tests
+
+    rspec spec/models
+
+Type next command to run integration tests
+
+    rspec spec/features
 
 
 ## Authors
