@@ -3,8 +3,8 @@ module ApplicationHelper
     html = ''
 
     if current_user
-      html += current_user.name
-      html += " "
+      html += link_to("Profile (#{current_user.name})", current_user)
+      html += " - "
       html += link_to('Log Out', logout_path) 
     else
       html += link_to('Sign Up', sign_up_path)
