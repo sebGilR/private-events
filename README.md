@@ -2,6 +2,11 @@
 
 > Private Events is a project created to practice Rails associations. The app includes user creation and login, event creation, and attending events.
 
+## Potential Features
+
+- Create a more attractive UI.
+- 
+
 ## Models created
 
 - User
