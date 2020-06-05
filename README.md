@@ -5,7 +5,6 @@
 ## Potential Features
 
 - Create a more attractive UI.
-- 
 
 ## Models created
 
