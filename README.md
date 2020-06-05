@@ -1,6 +1,6 @@
 # Private Events - Rails
 
-> Private Events is a project created to practice Rails associations. The app includes user creation and login, event creation and attending events.
+> Private Events is a project created to practice Rails associations. The app includes user creation and login, event creation, and attending events.
 
 ## Models created
 
@@ -19,11 +19,11 @@ You can clone or download this repo (you need ruby installed in your computer).
 
     git clone git@github.com:sebGilR/private-events.git
 
-Move to the app directory
+Move to the app directory.
 
     cd private-events
 
-And run the next instruction to get the gems that are needed for this project
+And finally, run the next instruction to get the gems that are needed for this project.
     
     bundle install
 
@@ -33,11 +33,11 @@ And run the next instruction to get the gems that are needed for this project
 
 ## How to run test cases
 
-Type next command to run unit tests
+Type next command to run unit tests.
 
     rspec spec/models
 
-Type next command to run integration tests
+Type next command to run integration tests.
 
     rspec spec/features
 
